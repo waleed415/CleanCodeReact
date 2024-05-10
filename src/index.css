@@ -1,13 +1,6 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('../src/assets/css/material-dashboard.css');
+@import url('../src/assets/css/nucleo-icons.css');
+@import url('../src/assets/css/nucleo-svg.css');
+@import url('../src/assets/css/material-dashboard.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
