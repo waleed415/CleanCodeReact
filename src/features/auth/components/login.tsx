@@ -35,7 +35,7 @@ class Login extends React.Component{
                                         </div>
                                     </div>
                                     <div className="card-body">
-                                        <form role="form" className="text-start">
+                                        <form role="form" className="text-start" >
                                             <TextBox placeholder="Email" ></TextBox>
                                             <PasswordBox placeholder="Password"></PasswordBox>
                                             <div className="text-center">
