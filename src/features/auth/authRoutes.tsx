@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 import AuthLayout from "../../layouts/AuthLaoyt";
 import Login from "./components/login";
 import Register from "./components/register";
@@ -6,7 +6,19 @@ import ForgotPassword from "./components/forgotPassword";
 import ResetPassowrd from "./components/resetPassword";
 
 
-const authRoutes = createBrowserRouter([
+const authRoutes: RouteObject[] = [
+    {
+        id:"auth-0",
+        path:"",
+        element:<AuthLayout />,
+        children:[
+            {
+                id:"auth-a1",
+                path:"",
+                element:<Login />
+            },
+        ]
+    },
     {
         id:"auth",
         path:"/auth",
@@ -34,6 +46,6 @@ const authRoutes = createBrowserRouter([
             }
         ]
     }
-]);
+];
 
 export default authRoutes;

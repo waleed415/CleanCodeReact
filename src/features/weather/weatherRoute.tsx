@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 import AdminLayout from "../../layouts/AdminLayout";
 import DashBoard from "./components/dashboard";
 
 
 
-const weatherRoutes = createBrowserRouter([
+const weatherRoutes : RouteObject[] = [
     {
         id:"admin",
         path:"/admin",
@@ -17,6 +17,6 @@ const weatherRoutes = createBrowserRouter([
             }
         ]
     }
-]);
+];
 
 export default weatherRoutes;

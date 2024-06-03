@@ -4,7 +4,7 @@ import { PasswordBox, TextBox } from "../../../components/inputs";
 import React from "react";
 
 
-class ResetPassowrd extends React.Component {
+class ResetPassowrd extends React.Component{
 
     render(): React.ReactNode {
         return (

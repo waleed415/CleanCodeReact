@@ -8,7 +8,7 @@ class PasswordBox extends React.Component<TextBoxProps>{
         return (
             <div className="input-group input-group-outline my-3">
                 <input type="password" className="form-control"
-                 placeholder={this.props.placeholder} value={this.props.value} />
+                 value={this.props.value} {...this.props} />
             </div>
         );
     }
