@@ -11,7 +11,7 @@ class DashBoard extends React.Component {
                     <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                         <div className="card">
                             <div className="card-header p-3 pt-2">
-                                <div className="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
+                                <div className="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute left-10">
                                     <i className="material-icons opacity-10">weekend</i>
                                 </div>
                                 <div className="text-end pt-1">
@@ -28,7 +28,7 @@ class DashBoard extends React.Component {
                     <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                         <div className="card">
                             <div className="card-header p-3 pt-2">
-                                <div className="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
+                                <div className="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute left-10">
                                     <i className="material-icons opacity-10">person</i>
                                 </div>
                                 <div className="text-end pt-1">
@@ -45,7 +45,7 @@ class DashBoard extends React.Component {
                     <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                         <div className="card">
                             <div className="card-header p-3 pt-2">
-                                <div className="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                                <div className="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute left-10">
                                     <i className="material-icons opacity-10">person</i>
                                 </div>
                                 <div className="text-end pt-1">
@@ -62,7 +62,7 @@ class DashBoard extends React.Component {
                     <div className="col-xl-3 col-sm-6">
                         <div className="card">
                             <div className="card-header p-3 pt-2">
-                                <div className="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                                <div className="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute left-10">
                                     <i className="material-icons opacity-10">weekend</i>
                                 </div>
                                 <div className="text-end pt-1">
@@ -77,70 +77,9 @@ class DashBoard extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-4">
-                    <div className="col-lg-4 col-md-6 mt-4 mb-4">
-                        <div className="card z-index-2 ">
-                            <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                                <div className="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                                    <div className="chart">
-                                        <canvas id="chart-bars" className="chart-canvas" height="170"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card-body">
-                                <h6 className="mb-0 ">Website Views</h6>
-                                <p className="text-sm ">Last Campaign Performance</p>
-                                <hr className="dark horizontal" />
-                                <div className="d-flex ">
-                                    <i className="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className="mb-0 text-sm"> campaign sent 2 days ago </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 mt-4 mb-4">
-                        <div className="card z-index-2  ">
-                            <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                                <div className="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                                    <div className="chart">
-                                        <canvas id="chart-line" className="chart-canvas" height="170"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card-body">
-                                <h6 className="mb-0 "> Daily Sales </h6>
-                                <p className="text-sm "> (<span className="font-weight-bolder">+15%</span>) increase in today sales. </p>
-                                <hr className="dark horizontal" />
-                                <div className="d-flex ">
-                                    <i className="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className="mb-0 text-sm"> updated 4 min ago </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 mt-4 mb-3">
-                        <div className="card z-index-2 ">
-                            <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                                <div className="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                    <div className="chart">
-                                        <canvas id="chart-line-tasks" className="chart-canvas" height="170"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card-body">
-                                <h6 className="mb-0 ">Completed Tasks</h6>
-                                <p className="text-sm ">Last Campaign Performance</p>
-                                <hr className="dark horizontal" />
-                                <div className="d-flex ">
-                                    <i className="material-icons text-sm my-auto me-1">schedule</i>
-                                    <p className="mb-0 text-sm">just updated</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row mb-4">
-                    <div className="col-lg-8 col-md-6 mb-md-0 mb-4">
+               
+                <div className="row mb-4 mt-4">
+                    <div className="col-lg-12 col-md-12 mb-md-0 mb-4">
                         <div className="card">
                             <div className="card-header pb-0">
                                 <div className="row">
@@ -410,75 +349,6 @@ class DashBoard extends React.Component {
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div className="card h-100">
-                            <div className="card-header pb-0">
-                                <h6>Orders overview</h6>
-                                <p className="text-sm">
-                                    <i className="fa fa-arrow-up text-success" aria-hidden="true"></i>
-                                    <span className="font-weight-bold">24%</span> this month
-                                </p>
-                            </div>
-                            <div className="card-body p-3">
-                                <div className="timeline timeline-one-side">
-                                    <div className="timeline-block mb-3">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-success text-gradient">notifications</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">$2400, Design changes</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM</p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-block mb-3">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-danger text-gradient">code</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-block mb-3">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-info text-gradient">shopping_cart</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">Server payments for April</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM</p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-block mb-3">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-warning text-gradient">credit_card</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">New card added for order #4395133</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM</p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-block mb-3">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-primary text-gradient">key</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">Unlock packages for development</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM</p>
-                                        </div>
-                                    </div>
-                                    <div className="timeline-block">
-                                        <span className="timeline-step">
-                                            <i className="material-icons text-dark text-gradient">payments</i>
-                                        </span>
-                                        <div className="timeline-content">
-                                            <h6 className="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
-                                            <p className="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

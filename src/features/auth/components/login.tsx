@@ -8,8 +8,17 @@ import { TokenRequestModel } from "../models/TokenRequestModel";
 import { IGenericForm } from "../../../models/GenericForm";
 import { required, validate } from "../../../utils/validationRules";
 import { AuthService } from "../services/authService";
+import { TokenState, login } from "../state/slice/token";
+import { connect } from "react-redux";
+import { TokenResponseModel } from "../models/TokenResponseModel";
 
-class Login extends React.Component<{}, IGenericForm<TokenRequestModel>> {
+interface LoginProps {
+    token: TokenResponseModel | undefined; // Prop from mapStateToProps
+    dispatch: any; // Dispatch function prop
+}
+
+
+class Login extends React.Component<LoginProps, IGenericForm<TokenRequestModel>> {
 
     private authService: AuthService;
 
@@ -50,9 +59,20 @@ class Login extends React.Component<{}, IGenericForm<TokenRequestModel>> {
         this.setState(form);
         if (form.isValid) {
             this.authService.getToken(form.formData).then(result => {
+                if(result){
+                    this.props.dispatch(login(result?.data))
+                    window.location.href = "/admin/weather";
+                }
             });
         }
     };
+
+    refrestToken = (refresToken: string) => {
+        this.authService.getRefreshToken(refresToken).then(res => {
+            this.props.dispatch(login(res?.data));
+        })
+    }
+
 
     render(): React.ReactNode {
         const { userName, password } = this.state.formData;
@@ -118,4 +138,12 @@ class Login extends React.Component<{}, IGenericForm<TokenRequestModel>> {
 
 }
 
-export default Login;
+// MapStateToProps to access token from state
+const mapStateToProps = (state: TokenState) => ({
+    token: state.token, // Access token from token slice
+});
+
+// Connect the component with mapStateToProps
+const ConnectedLogin = connect(mapStateToProps)(Login);
+
+export default ConnectedLogin;

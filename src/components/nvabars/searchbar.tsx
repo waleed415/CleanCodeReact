@@ -1,9 +1,17 @@
 import React from "react";
+import { isUserLoggedin, setLogout } from "../../utils/authUtil";
 
 
 class SearchBar extends React.Component{
 
+    handleLogoutClick = (event:React.SyntheticEvent<HTMLAnchorElement>) =>{
+        event.preventDefault();
+        setLogout();
+    }
+
     render(): React.ReactNode {
+        const isUserLogedIn = isUserLoggedin();
+        
         return(
             <nav className="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
             <div className="container-fluid py-1 px-3">
@@ -116,10 +124,18 @@ class SearchBar extends React.Component{
                             </ul>
                         </li>
                         <li className="nav-item d-flex align-items-center">
+                            {!isUserLogedIn &&
                             <a href="../pages/sign-in.html" className="nav-link text-body font-weight-bold px-0">
                                 <i className="fa fa-user me-sm-1"></i>
                                 <span className="d-sm-inline d-none">Sign In</span>
                             </a>
+                            }
+                            {isUserLogedIn &&
+                            <a href="/" onClick={this.handleLogoutClick}  className="nav-link text-body font-weight-bold px-0">
+                                <i className="fa fa-user me-sm-1"></i>
+                                <span className="d-sm-inline d-none">Sign Out</span>
+                            </a>
+                            }
                         </li>
                     </ul>
                 </div>
