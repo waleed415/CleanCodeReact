@@ -4,5 +4,4 @@ export interface AuthConfigs{
     refreshTokenUrl:string
     forgotPasswordUrl:string
     resetPasswordUrl:string
-    timeForRefreshToken:number
 }

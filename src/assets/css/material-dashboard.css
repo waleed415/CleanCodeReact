@@ -27932,5 +27932,7 @@ pre[class*="language-"] {
     overflow: auto !important;
   }
 }
-
+.left-10{
+  left: 10px;
+}
 /*# sourceMappingURL=dashboard-free.css.map */
