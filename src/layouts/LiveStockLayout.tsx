@@ -1,20 +1,46 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import '../assets/livestockClient.css';
 
-class LiveStockLayout extends React.Component {
+class LiveStockLayout extends React.Component <{}, {
+    cssLoaded: boolean;
+  }> {
 
-    render(): React.ReactNode {
-        const mystyle = {
-            color: "white",
-            backgroundColor: "DodgerBlue",
-            padding: "10px",
-            fontFamily: "Arial"
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            cssLoaded: false,
           };
+    }
+
+    componentDidMount() {
+        // Dynamically import the CSS file when the component mounts
+        this.loadCSS('../assets/livestockClient.css')
+          .then(() => {
+            this.setState({ cssLoaded: true });
+          })
+          .catch((error) => console.error('Error loading CSS:', error));
+      }
+
+      loadCSS(href: string): Promise<void> {
+        debugger;
+        return new Promise((resolve, reject) => {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = href;
+    
+          link.onload = () => resolve();
+          link.onerror = () => reject(new Error(`Failed to load CSS: ${href}`));
+    
+          document.head.appendChild(link);
+        });
+      }
+    render(): React.ReactNode {
+        
         return (
             <>
-              
-                <main className="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-                {/* <!-- Navbar start --> */}
+           
+        {/* <!-- Navbar start --> */}
         <div className="container-fluid fixed-top">
             <div className="container topbar bg-primary d-none d-lg-block">
                 <div className="d-flex justify-content-between">
@@ -55,7 +81,7 @@ class LiveStockLayout extends React.Component {
                             <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
                             <a href="#" className="position-relative me-4 my-auto">
                                 <i className="fa fa-shopping-bag fa-2x"></i>
-                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style={mystyle}>3</span>
+                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" >3</span>
                             </a>
                             <a href="#" className="my-auto">
                                 <i className="fas fa-user fa-2x"></i>
@@ -65,10 +91,8 @@ class LiveStockLayout extends React.Component {
                 </nav>
             </div>
         </div>
-                    <div className="container-fluid py-4 bg-gray-200">
-                        <Outlet />
-                    </div>
-                </main>
+        {/* <!-- Navbar End --> */}
+        <Outlet />
             </>
         );
     }

@@ -18,6 +18,18 @@ const weatherRoutes: RouteObject[] = [{
             element: <DashBoard />
         }
     ]
+},
+{
+    id: "test",
+    path: "/test",
+    element: <AdminLayout />,
+    children: [
+        {
+            id: "admin-c12",
+            path: "weather2",
+            element: <DashBoard />
+        }
+    ]
 }];
 
 

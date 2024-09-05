@@ -1,16 +1,13 @@
 import React from "react";
 import { FooterBar, SearchBar, SideNav } from "../components/nvabars";
 import { Outlet } from "react-router-dom";
-// import '../assets/admin.css';
+//  import '../assets/admin.css';
 
 
 class AdminLayout extends React.Component<{}, {
     cssLoaded: boolean;
   }> {
 
-    /**
-     *
-     */
     constructor(props: any) {
         super(props);
         this.state = {
