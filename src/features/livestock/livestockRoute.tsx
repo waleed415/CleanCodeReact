@@ -13,7 +13,7 @@ const livestockRoutes: RouteObject[] = [
         children:[
             {
                 id:"home-c1",
-                path:"home",
+                path:"",
                 element:<LivestockHome />
             }
         ]

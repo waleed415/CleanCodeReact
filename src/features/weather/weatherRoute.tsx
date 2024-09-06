@@ -8,9 +8,8 @@ import ProtectedRoute from "../../components/customRoute/protectedRoute";
 const weatherRoutes: RouteObject[] = [{
     id: "admin",
     path: "/admin",
-    element: <ProtectedRoute>
-        <AdminLayout />
-    </ProtectedRoute>,
+    element: 
+        <AdminLayout />,
     children: [
         {
             id: "admin-c1",

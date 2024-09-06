@@ -3,6 +3,7 @@ import { AuthButton } from "../../../components/buttons";
 import { PasswordBox, TextBox } from "../../../components/inputs";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Pagination from "../../../components/liveStockShared/Pagination";
  
 class LivestockHome extends React.Component{
 
@@ -354,18 +355,8 @@ class LivestockHome extends React.Component{
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-12">
-                                            <div className="pagination d-flex justify-content-center mt-5">
-                                                <a href="#" className="rounded">&laquo;</a>
-                                                <a href="#" className="active rounded">1</a>
-                                                <a href="#" className="rounded">2</a>
-                                                <a href="#" className="rounded">3</a>
-                                                <a href="#" className="rounded">4</a>
-                                                <a href="#" className="rounded">5</a>
-                                                <a href="#" className="rounded">6</a>
-                                                <a href="#" className="rounded">&raquo;</a>
-                                            </div>
-                                        </div>
+                                        <Pagination/>
+                                        
                                     </div>
                                 </div>
                             </div>
