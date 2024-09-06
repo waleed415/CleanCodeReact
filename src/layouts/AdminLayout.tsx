@@ -1,46 +1,19 @@
 import React from "react";
 import { FooterBar, SearchBar, SideNav } from "../components/nvabars";
 import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet";
 //  import '../assets/admin.css';
 
 
-class AdminLayout extends React.Component<{}, {
-    cssLoaded: boolean;
-  }> {
+class AdminLayout extends React.Component {
 
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            cssLoaded: false,
-          };
-    }
-
-    componentDidMount() {
-        // Dynamically import the CSS file when the component mounts
-        this.loadCSS('../assets/admin.css')
-          .then(() => {
-            this.setState({ cssLoaded: true });
-          })
-          .catch((error) => console.error('Error loading CSS:', error));
-      }
-
-      loadCSS(href: string): Promise<void> {
-        debugger;
-        return new Promise((resolve, reject) => {
-          const link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = href;
-    
-          link.onload = () => resolve();
-          link.onerror = () => reject(new Error(`Failed to load CSS: ${href}`));
-    
-          document.head.appendChild(link);
-        });
-      }
 
     render(): React.ReactNode {
         return (
             <>
+             <Helmet>
+          <link rel="stylesheet" type="text/css" href="/assets/admin.css" />
+        </Helmet>
                 <SideNav />
                 <main className="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
                     <SearchBar />

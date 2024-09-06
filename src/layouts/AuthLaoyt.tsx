@@ -1,5 +1,6 @@
 import React from "react";
-import {  Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const backgroundImageStyle = {
     backgroundImage: 'url("https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80")',
@@ -7,13 +8,18 @@ const backgroundImageStyle = {
 
 class AuthLayout extends React.Component {
 
+   
     render(): React.ReactNode {
         return (
+            
             <main className="main-content mt-0">
+                <Helmet>
+                    <link rel="stylesheet" href="/assets/admin.css"></link>
+                </Helmet>
                 <div className="page-header align-items-start min-vh-100" style={backgroundImageStyle} >
                     <span className="mask bg-gradient-dark opacity-6"></span>
                     <div className="container my-auto">
-                            <Outlet />
+                        <Outlet />
 
                         {/* {this.children} */}
                     </div>

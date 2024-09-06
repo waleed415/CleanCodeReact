@@ -31,8 +31,8 @@ class LivestockHome extends React.Component{
             <div className="container-fluid page-header py-5">
                 <h1 className="text-center text-white display-6">Shop</h1>
                 <ol className="breadcrumb justify-content-center mb-0">
-                    <li className="breadcrumb-item"><a href="#">Home</a></li>
-                    <li className="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li className="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                    <li className="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
                     <li className="breadcrumb-item active text-white">Shop</li>
                 </ol>
             </div>
@@ -72,31 +72,31 @@ class LivestockHome extends React.Component{
                                                 <ul className="list-unstyled fruite-categorie">
                                                     <li>
                                                         <div className="d-flex justify-content-between fruite-name">
-                                                            <a href="#"><i className="fas fa-apple-alt me-2"></i>Apples</a>
+                                                            <a href="javascript:void(0);"><i className="fas fa-apple-alt me-2"></i>Apples</a>
                                                             <span>(3)</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div className="d-flex justify-content-between fruite-name">
-                                                            <a href="#"><i className="fas fa-apple-alt me-2"></i>Oranges</a>
+                                                            <a href="javascript:void(0);"><i className="fas fa-apple-alt me-2"></i>Oranges</a>
                                                             <span>(5)</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div className="d-flex justify-content-between fruite-name">
-                                                            <a href="#"><i className="fas fa-apple-alt me-2"></i>Strawbery</a>
+                                                            <a href="javascript:void(0);"><i className="fas fa-apple-alt me-2"></i>Strawbery</a>
                                                             <span>(2)</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div className="d-flex justify-content-between fruite-name">
-                                                            <a href="#"><i className="fas fa-apple-alt me-2"></i>Banana</a>
+                                                            <a href="javascript:void(0);"><i className="fas fa-apple-alt me-2"></i>Banana</a>
                                                             <span>(8)</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div className="d-flex justify-content-between fruite-name">
-                                                            <a href="#"><i className="fas fa-apple-alt me-2"></i>Pumpkin</a>
+                                                            <a href="javascript:void(0);"><i className="fas fa-apple-alt me-2"></i>Pumpkin</a>
                                                             <span>(5)</span>
                                                         </div>
                                                     </li>
@@ -195,7 +195,7 @@ class LivestockHome extends React.Component{
                                                 </div>
                                             </div>
                                             <div className="d-flex justify-content-center my-4">
-                                                <a href="#" className="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Vew More</a>
+                                                <a href="javascript:void(0);" className="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Vew More</a>
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
@@ -222,7 +222,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -238,7 +238,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -254,7 +254,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -270,7 +270,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -286,7 +286,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -302,7 +302,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,7 +318,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -334,7 +334,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -350,7 +350,7 @@ class LivestockHome extends React.Component{
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div className="d-flex justify-content-between flex-lg-wrap">
                                                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                        <a href="javascript:void(0);" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                                                     </div>
                                                 </div>
                                             </div>

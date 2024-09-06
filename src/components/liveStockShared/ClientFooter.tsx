@@ -14,7 +14,7 @@ class ClientFooter extends React.Component {
                     <div className="pb-4 mb-4" style={footerStyle}>
                         <div className="row g-4">
                             <div className="col-lg-3">
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <h1 className="text-primary mb-0">Fruitables</h1>
                                     <p className="text-secondary mb-0">Fresh products</p>
                                 </a>
@@ -86,7 +86,7 @@ class ClientFooter extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            <span className="text-light"><a href="#"><i className="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                            <span className="text-light"><a href="javascript:void(0);"><i className="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
                         </div>
                         <div className="col-md-6 my-auto text-center text-md-end text-white">
 

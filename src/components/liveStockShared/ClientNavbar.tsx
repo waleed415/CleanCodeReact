@@ -8,13 +8,13 @@ class ClientNavbar extends React.Component {
             <div className="container topbar bg-primary d-none d-lg-block">
                 <div className="d-flex justify-content-between">
                     <div className="top-info ps-2">
-                        <small className="me-3"><i className="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" className="text-white">123 Street, New York</a></small>
-                        <small className="me-3"><i className="fas fa-envelope me-2 text-secondary"></i><a href="#" className="text-white">Email@Example.com</a></small>
+                        <small className="me-3"><i className="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="javascript:void(0);" className="text-white">123 Street, New York</a></small>
+                        <small className="me-3"><i className="fas fa-envelope me-2 text-secondary"></i><a href="javascript:void(0);" className="text-white">Email@Example.com</a></small>
                     </div>
                     <div className="top-link pe-2">
-                        <a href="#" className="text-white"><small className="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" className="text-white"><small className="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" className="text-white"><small className="text-white ms-2">Sales and Refunds</small></a>
+                        <a href="javascript:void(0);" className="text-white"><small className="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="javascript:void(0);" className="text-white"><small className="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="javascript:void(0);" className="text-white"><small className="text-white ms-2">Sales and Refunds</small></a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ class ClientNavbar extends React.Component {
                             <a href="shop.html" className="nav-item nav-link">Shop</a>
                             <a href="shop-detail.html" className="nav-item nav-link">Shop Detail</a>
                             <div className="nav-item dropdown">
-                                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="javascript:void(0);" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div className="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="cart.html" className="dropdown-item">Cart</a>
                                     <a href="chackout.html" className="dropdown-item">Chackout</a>
@@ -42,11 +42,11 @@ class ClientNavbar extends React.Component {
                         </div>
                         <div className="d-flex m-3 me-0">
                             <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
-                            <a href="#" className="position-relative me-4 my-auto">
+                            <a href="javascript:void(0);" className="position-relative me-4 my-auto">
                                 <i className="fa fa-shopping-bag fa-2x"></i>
                                 <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" >3</span>
                             </a>
-                            <a href="#" className="my-auto">
+                            <a href="javascript:void(0);" className="my-auto">
                                 <i className="fas fa-user fa-2x"></i>
                             </a>
                         </div>
