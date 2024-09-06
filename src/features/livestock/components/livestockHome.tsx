@@ -3,12 +3,13 @@ import { AuthButton } from "../../../components/buttons";
 import { PasswordBox, TextBox } from "../../../components/inputs";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+ 
 class LivestockHome extends React.Component{
 
     render(): React.ReactNode {
         return (
     <div>
+         
             <div className="modal fade" id="searchModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-fullscreen">
                     <div className="modal-content rounded-0">
@@ -109,35 +110,35 @@ class LivestockHome extends React.Component{
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
-                                            <div className="mb-3">
-                                                <h4>Additional</h4>
-                                                <div className="mb-2">
-                                                    <input type="radio" className="me-2" id="Categories-1" name="Categories-1" value="Beverages"/>
-                                                    <label htmlFor="Categories-1"> Organic</label>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <input type="radio" className="me-2" id="Categories-2" name="Categories-1" value="Beverages"/>
-                                                    <label htmlFor="Categories-2"> Fresh</label>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <input type="radio" className="me-2" id="Categories-3" name="Categories-1" value="Beverages"/>
-                                                    <label htmlFor="Categories-3"> Sales</label>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <input type="radio" className="me-2" id="Categories-4" name="Categories-1" value="Beverages"/>
-                                                    <label htmlFor="Categories-4"> Discount</label>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <input type="radio" className="me-2" id="Categories-5" name="Categories-1" value="Beverages"/>
-                                                    <label htmlFor="Categories-5"> Expired</label>
-                                                </div>
+                                        <div className="mb-3">
+                                            <h4>Additional</h4>
+                                            <div className="mb-2">
+                                                <input type="radio" className="me-2" id="Categories-1" name="Categories-1" value="Beverages"/>
+                                                <label > Organic</label>
+                                            </div>
+                                            <div className="mb-2">
+                                                <input type="radio" className="me-2" id="Categories-2" name="Categories-1" value="Beverages"/>
+                                                <label > Fresh</label>
+                                            </div>
+                                            <div className="mb-2">
+                                                <input type="radio" className="me-2" id="Categories-3" name="Categories-1" value="Beverages"/>
+                                                <label > Sales</label>
+                                            </div>
+                                            <div className="mb-2">
+                                                <input type="radio" className="me-2" id="Categories-4" name="Categories-1" value="Beverages"/>
+                                                <label > Discount</label>
+                                            </div>
+                                            <div className="mb-2">
+                                                <input type="radio" className="me-2" id="Categories-5" name="Categories-1" value="Beverages"/>
+                                                <label > Expired</label>
                                             </div>
                                         </div>
+                                    </div>
                                         <div className="col-lg-12">
                                             <h4 className="mb-3">Featured products</h4>
                                             <div className="d-flex align-items-center justify-content-start">
                                                 <div className="rounded me-4" style={{width: 100 , height: 100}}>
-                                                <img src="../assets/livestock-assets/img/featur-1.jpg" className="img-fluid rounded" alt=""/>
+                                                <img src={require('../../../assets/livestock-assets/img/featur-1.jpg')} className="img-fluid rounded" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="mb-2">Big Banana</h6>
@@ -156,7 +157,7 @@ class LivestockHome extends React.Component{
                                             </div>
                                             <div className="d-flex align-items-center justify-content-start">
                                                 <div className="rounded me-4" style={{width: 100, height: 100}}>
-                                                    <img src="../assets/livestock-assets/img/featur-2.jpg" className="img-fluid rounded" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/featur-2.jpg')} className="img-fluid rounded" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="mb-2">Big Banana</h6>
@@ -175,7 +176,7 @@ class LivestockHome extends React.Component{
                                             </div>
                                             <div className="d-flex align-items-center justify-content-start">
                                                 <div className="rounded me-4" style={{width: 100 , height: 100}}>
-                                                    <img src="../assets/livestock-assets/img/featur-3.jpg" className="img-fluid rounded" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/featur-3.jpg')} className="img-fluid rounded" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="mb-2">Big Banana</h6>
@@ -198,7 +199,7 @@ class LivestockHome extends React.Component{
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="position-relative">
-                                                <img src="../assets/livestock-assets/img/banner-fruits.jpg" className="img-fluid w-100 rounded" alt=""/>
+                                                <img src={require('../../../assets/livestock-assets/img/banner-fruits.jpg')} className="img-fluid w-100 rounded" alt=""/>
                                                 <div className="position-absolute" style={{top: 50, right: 10}}>
                                                     <h3 className="text-secondary fw-bold">Fresh <br/> Fruits <br/> Banner</h3>
                                                 
@@ -212,7 +213,23 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-5.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
+                                                </div>
+                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
+                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Grapes</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div className="d-flex justify-content-between flex-lg-wrap">
+                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6 col-lg-6 col-xl-4">
+                                            <div className="rounded position-relative fruite-item">
+                                                <div className="fruite-img">
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-5.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -228,23 +245,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt=""/>
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Grapes</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-6 col-xl-4">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-2.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -260,7 +261,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-4.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -276,7 +277,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-3.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -292,7 +293,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-1.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -308,7 +309,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-2.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -324,7 +325,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-5.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -340,7 +341,7 @@ class LivestockHome extends React.Component{
                                         <div className="col-md-6 col-lg-6 col-xl-4">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="../assets/livestock-assets/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt=""/>
+                                                    <img src={require('../../../assets/livestock-assets/img/fruite-item-1.jpg')} className="img-fluid w-100 rounded-top" alt=""/>
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: 10, left: 10}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
